@@ -1,0 +1,72 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: revert;
+    font-weight: revert;
+  }
+
+  blockquote {
+    font-style: italic;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-left: 0.25rem solid #333;
+    background-color: #f4f4f4;
+  }
+
+  .image-block img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: revert;
+    font-weight: revert;
+  }
+
+  .superFancyBlockquote {
+    font-style: italic;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-left: 0.25rem solid #333;
+    background-color: #f4f4f4;
+  }
+
+  .left-align {
+    display: ruby-text;
+    text-align: left;
+  }
+
+  .right-align {
+    display: ruby-text;
+    text-align: right;
+  }
+
+  .center-align {
+    display: ruby-text;
+    text-align: center;
+  }
+
+  .image-block img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+}
