@@ -11,7 +11,9 @@ const findLinkEntities = (
   const text = contentBlock.getText();
   let matchArr;
   while ((matchArr = linkRegex.exec(text)) !== null) {
-    callback(matchArr.index, matchArr.index + matchArr[0].length);
+    const start = matchArr.index;
+    const end = start + matchArr[0].length;
+    callback(start, end);
   }
 };
 

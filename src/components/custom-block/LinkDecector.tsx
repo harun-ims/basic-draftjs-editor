@@ -2,13 +2,13 @@ import React from "react";
 import { ContentState, DraftDecoratorComponentProps } from "draft-js";
 
 // Define the type for the props
-interface LinkDecoratorProps extends DraftDecoratorComponentProps {
+interface LinkDecectorProps extends DraftDecoratorComponentProps {
   contentState: ContentState;
   entityKey: string;
   decoratedText: string;
 }
 
-const LinkDecorator: React.FC<LinkDecoratorProps> = (props) => {
+const LinkDecector: React.FC<LinkDecectorProps> = (props) => {
   let url = props.decoratedText;
   // Add "http://" if the URL does not have a protocol
   if (!/^https?:\/\//i.test(url)) {
@@ -26,4 +26,4 @@ const LinkDecorator: React.FC<LinkDecoratorProps> = (props) => {
   );
 };
 
-export default LinkDecorator;
+export default LinkDecector;

@@ -1,10 +1,10 @@
 import { CompositeDecorator } from "draft-js";
-import LinkDecorator from "../components/custom-block/LinkDecorator";
-import findLinkEntities from "../utils/linkStrategy";
+import LinkDecorator from "../components/custom-block/LinkDecector";
+import findLinkStrategy from "../strategiest/findLinkStrategy";
 
 const decorator = new CompositeDecorator([
   {
-    strategy: findLinkEntities,
+    strategy: findLinkStrategy,
     component: LinkDecorator,
   },
 ]);
